@@ -1,6 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import logoFFL from './assets/logo_FFL_black.png';
+import logoRLL from './assets/logo_RLL_black.png';
+import logoSCL from './assets/logo_SCL_black.png';
+import logoULO from './assets/logo_ULO_black.png';
+import logoWDL from './assets/logo_WDL_black.png';
+import logoWFL from './assets/logo_WFL_black.png';
 import './App.css'
 
 function App() {
@@ -12,39 +16,39 @@ function App() {
         <div className='card-container'>
           <div className='card'>
             <p>
-              telegram
+              FFL
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={logoFFL} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              RLL
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={logoRLL} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              SCL
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={logoSCL} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              ULO
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={logoULO} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              WDL
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={logoWDL} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              WFL
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={logoWFL} alt="logo" className="logo"/>
           </div>
         </div>
       </div>
