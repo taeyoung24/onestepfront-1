@@ -1,6 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import joystickLogo from './assets/joystick.png'
+import artLogo from './assets/art.png'
+import musicLogo from './assets/headphones.png'
+import watchaLogo from './assets/watcha.png'
+import studyLogo from './assets/study.png'
+import kendoLogo from './assets/kendo.png'
 import './App.css'
 
 function App() {
@@ -12,39 +16,39 @@ function App() {
         <div className='card-container'>
           <div className='card'>
             <p>
-              telegram
+              game
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={joystickLogo} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              artwork
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={artLogo} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              music
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={musicLogo} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              watcha
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={watchaLogo} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              study
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={studyLogo} alt="logo" className="logo"/>
           </div>
           <div className='card'>
             <p>
-              telegram
+              kendo
             </p>
-            <img src={reactLogo} alt="logo" className="logo"/>
+            <img src={kendoLogo} alt="logo" className="logo"/>
           </div>
         </div>
       </div>
