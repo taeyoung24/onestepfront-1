@@ -80,6 +80,7 @@
   margin-bottom: 50px;
   margin-left: 43px;
   z-index: 2;
+  cursor: pointer; /* 클릭 가능한 요소로 표시 */
 }
 
 .circle {
@@ -91,6 +92,7 @@
   z-index: 1;
   margin-bottom: 50px;
   margin-left: 30px;
+  cursor: pointer; 
 }
 
 .letter-container {

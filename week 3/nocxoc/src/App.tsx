@@ -7,10 +7,10 @@ function TodoItem({
   title,
   content,
   time,
-  backgroundColor = '#ffffff', 
+  backgroundColor = '#ffffff',
   lineColor = '#859fd6',
-  circleColor = '#859fd6', 
-  timeColor = '#859fd6', 
+  circleColor = '#859fd6',
+  timeColor = '#859fd6',
 }: {
   logo: string;
   title: string;
@@ -21,12 +21,35 @@ function TodoItem({
   circleColor?: string;
   timeColor?: string;
 }) {
+  const [isClicked, setIsClicked] = useState(false); // 클릭 상태 관리
+
+  const handleCircleClick = () => {
+    setIsClicked(!isClicked); // 클릭 상태 토글
+  };
+
   return (
-    <div className='todo-container' style={{ backgroundColor: backgroundColor }}>
+    <div
+      className='todo-container'
+      style={{
+        backgroundColor: isClicked ? '#d3f9d8' : backgroundColor, // 클릭 여부에 따라 배경색 변경
+      }}
+    >
       <div className='graphic-container'>
-        <div className='vertical-line' style={{ backgroundColor: lineColor }}></div>
-        <div className='circle' style={{ backgroundColor: circleColor }}></div>
-        <img src={logo} className='image' alt='Task Logo' />
+        <div
+          className='vertical-line'
+          style={{ backgroundColor: isClicked ? '#6fcf97' : lineColor }}
+        ></div>
+        <div
+          className='circle'
+          style={{ backgroundColor: isClicked ? '#6fcf97' : circleColor }}
+          onClick={handleCircleClick} // 클릭 이벤트 추가
+        ></div>
+        <img
+          src={logo}
+          className='image'
+          alt='Task Logo'
+          onClick={handleCircleClick} // 클릭 이벤트 추가
+        />
       </div>
       <div className='letter-container'>
         <div className='title'>
@@ -35,7 +58,7 @@ function TodoItem({
         <div className='contents'>
           <p>{content}</p>
         </div>
-        <div className='time' style={{ color: timeColor }}>
+        <div className='time' style={{ color: isClicked ? '#6fcf97' : timeColor }}>
           <p>{time}</p>
         </div>
       </div>
@@ -57,9 +80,6 @@ function App() {
             title='One-step Front Project'
             content='Discord'
             time='13:00 - 15:00'
-            circleColor='#98D6BE'
-            lineColor='#98D6BE'
-            timeColor='#98D6BE'
           />
           <TodoItem
             logo={checkLogo}
@@ -78,18 +98,12 @@ function App() {
             title='Kendo'
             content='Ochi Kendo Hall'
             time='20:30 - 21:30'
-            circleColor='#98D6BE'
-            lineColor='#98D6BE'
-            timeColor='#98D6BE'
           />
           <TodoItem
             logo={checkLogo}
             title='Kendo Club'
             content='Ochi Kendo Hall'
             time='13:00 - 17:00'
-            circleColor='#F48389'
-            lineColor='#F48389'
-            timeColor='#F48389'
           />
           <TodoItem
             logo={checkLogo}
