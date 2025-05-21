@@ -1,0 +1,49 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F8F7FD;
+}
+
+.calendar-container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.date-frame {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 10px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 90.14px;
+  height: 90.14px;
+}
+
+.contents-frame {
+  width:100%;
+  height: 100%;
+}
+
+.date-frame p {
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins';
+  font-size: 13px;
+  font-weight: 500;
+  color: #262626;
+  text-align: right;
+  width: 100%;
+}
