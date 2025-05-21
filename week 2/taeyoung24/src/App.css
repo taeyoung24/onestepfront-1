@@ -1,0 +1,193 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: rgb(224, 225, 231);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 동일한 너비 컬럼 */
+  gap: 20px;
+  justify-items: center; /* 각 셀 내부 아이템 가로 중앙 정렬 (선택 사항) */
+  align-items: center; /* 각 셀 내부 아이템 세로 중앙 정렬 */
+  width: fit-content; /* 또는 필요시 width: 100%; 등 */
+  height: fit-content;
+  justify-content: center; /* 그리드 자체를 부모 내에서 가로 중앙 정렬 (부모가 grid보다 클 때) */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 460px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.04);
+}
+
+.card-body > hr {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-top: 1.4px solid rgb(236, 236, 236);
+}
+
+.upper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  height: fit-content;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.info-container > .info {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.head-container > .profile {
+  display: flex;
+  width: 68px;
+  height: 68px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #ee8e69;
+  flex-shrink: 0;
+}
+
+.head-container > .head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  color: var(--color-text-primary);
+}
+
+.head > h6 {
+  background-color: #f7f7f7;
+  padding: 4px 6px;
+  border-radius: 10px;
+  color: var(--color-text-primary);
+}
+
+.head > h4 {
+  color: var(--color-text-black);
+}
+
+.head-container > .option {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+}
+
+.lower-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.lower-container > .label-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.progressbar {
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 8px;
+}
+
+.progressbar .background {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+}
+
+.progressbar .bar {
+  width: 20%;
+  height: 100%;
+  background-color: #43c58f;
+  border-radius: 20px;
+}
+
+p.loading-percentage {
+  font-size: 14px;
+  font-weight: 1000;
+  color: var(--color-text-primary);
+}
+
+p.key {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+p.value {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--color-text-muted);
+}

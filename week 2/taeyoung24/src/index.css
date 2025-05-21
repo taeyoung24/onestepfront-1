@@ -1,0 +1,77 @@
+:root {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(34, 34, 34, 0.87);
+  background-color: #ffffff;
+
+  --color-text-black: #222222;
+  --color-text-primary: #696969;
+  --color-text-muted: #808080;
+  --color-text-secondary: #b1b1b1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+p {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}

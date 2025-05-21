@@ -1,0 +1,131 @@
+.tasks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-items: center; /* 각 자식 요소 가로 중앙 정렬 */
+  align-items: center; /* 각 자식 요소 세로 중앙 정렬 */
+}
+
+.task-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 500px;
+  height: fit-content;
+  padding: 22px;
+  gap: 16px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.task-container--completed {
+  background-color: #c9f9eb;
+}
+
+.task-container--cancelled {
+  background-color: #feeaea;
+}
+
+.handle {
+  align-self: stretch;
+  width: 4.8px;
+  background-color: #4e4cdd;
+  border-radius: 8px;
+}
+
+.handle--completed {
+  background-color: #2de1bc;
+}
+
+.handle--cancelled {
+  background-color: #f7878c;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 16px;
+  background-color: #4e4cdd27;
+  border-radius: 100%;
+}
+
+.icon-container--completed {
+  background-color: #2de1bc;
+}
+
+.icon-container--cancelled {
+  background-color: #f7878c;
+}
+
+.inner-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  width: 100%;
+  height: fit-content;
+}
+
+.inner-body > .upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  height: fit-content;
+}
+
+.inner-body > .lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  height: fit-content;
+}
+
+h1.task-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+p.task-description {
+  font-size: 14px;
+  font-weight: 500;
+  color: #a1a1a1;
+}
+
+p.task-extras {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4e4cdd;
+  width: fit-content;
+  height: fit-content;
+  background-color: #4e4cdd27;
+}
+
+p.task-extras--completed {
+  color: #27d8b5;
+  background-color: #2de1bd27;
+}
+
+p.task-extras--cancelled {
+  color: #f7878c;
+  background-color: #f7878c27;
+}
