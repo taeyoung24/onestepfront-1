@@ -1,0 +1,58 @@
+.dayblock-container {
+  align-self: stretch;
+  height: 90px;
+  padding: 10px;
+  background: white;
+  overflow: hidden;
+  border-radius: 14px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dayblock-header {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.day-number {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text);
+  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.day-number.today {
+  width: 21px;
+  height: 21px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+.day-number.holiday {
+  color: #FF3A3A;
+}
+
+.day-number.other-month {
+  color: var(--color-text-light);
+}
+
+.dayblock-body {
+  align-self: stretch;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+}
