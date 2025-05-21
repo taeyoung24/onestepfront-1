@@ -1,0 +1,132 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E3E7EB;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 25%;
+  height: fit-content;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.contents .box {
+  width: 60px;
+  height: 60px;
+  background-color: #5f7fe9;
+  position: relative;
+  border-radius: 8px;
+}
+
+.contents img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+  font-family: 'Roboto';
+  height: 60px;
+}
+
+.category {
+  font-size: 13px;
+  color: #6d6a6a;
+  background-color: #F8F6FD;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #5C6065;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1f1;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  width: 100%; /* progress-bar의 전체 너비 */
+  height: 8px;
+  background-color: #F7F7F7; /* 배경색 */
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #f5ce65; /* 진행된 부분의 색상 */
+  border-radius: 4px;
+  width: var(--progress-width, 0%); /* CSS 변수로 너비 설정 */
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #808485;
+  text-align: right;
+  min-width: 30px;
+  font-family: 'Roboto';
+  font-weight: 800;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
